@@ -1,7 +1,7 @@
 ### Multi-stage Docker file - maven build for java ###
 
 ## Stage 1/2 - Build fat JAR file with maven
-FROM harbor.example.com/library/java/maven:3-jdk-8-slim-Feb22 as builder
+FROM harbor.example.com/library/java/maven:3.8.4-jdk-8-slim as builder
 
 RUN mkdir -p /build
 WORKDIR /build
